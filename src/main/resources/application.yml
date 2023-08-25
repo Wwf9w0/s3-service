@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgresqldb:5432/test
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    #generate-unique-name: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+  servlet:
+    multipart:
+      max-file-size: 50MB
+server:
+  port: 8080
+
+aws:
+  accessKey: AKIA5TLPTRA36FXU7MJS
+  secretKey: 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
+  region: eu-north-1
+  bucketName: codes-bucket-f9
+
